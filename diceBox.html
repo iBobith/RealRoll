@@ -1,19 +1,24 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta http-equiv="refresh" content="10">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>TrueRoll</title>
- </head>
- <body>
-    <button id="1d6">Go to 1d6</button>
-
-    <div id="diceBox">
-      <p>Here's where you choose your dice!</p>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DiceBox</title>
+</head>
+<body>
+    <div class="menu-container">
+        <h1>Welcome to the DiceBox!</h1>
+        <p>Select a dice to roll:</p>
+        <button onclick="navigateToDice('d4')">D4</button>
+        <button onclick="navigateToDice('d6')">D6</button>
+        <button onclick="navigateToDice('d8')">D8</button>
+        <button onclick="navigateToDice('d10')">D10</button>
+        <button onclick="navigateToDice('d12')">D12</button>
+        <button onclick="navigateToDice('d20')">D20</button>
     </div>
+    <script src="app.js"></script>
+</body>
+</html>
 
-    <script src="./buttons.js"></script>
- </body>
- </html>
